@@ -5,5 +5,11 @@ void main() => runApp(
 
       title: 'Puertas Violetas',
       home: Home(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.deepPurple,
+        accentColor: Colors.pink,
+
+      )
     )
     );
