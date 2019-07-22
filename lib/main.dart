@@ -32,9 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<TabItem> tabItems = List.of([
     new TabItem(Icons.home, "Home", Colors.deepPurple),
-    new TabItem(Icons.message, "Search", Colors.pinkAccent),
-    new TabItem(Icons.layers, "Reports", Colors.red),
-    new TabItem(Icons.notifications, "Notifications", Colors.cyan),
+    new TabItem(Icons.message, "Como Actuar", Colors.pinkAccent),
+    new TabItem(Icons.layers, "?", Colors.red),
+    new TabItem(Icons.notifications, "Ajustes", Colors.cyan),
   ]);
 
   CircularBottomNavigationController _navigationController;
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String slogan;
     switch (selectedPos) {
       case 0:
-        slogan = "Familly, Happiness, Food";
+        slogan = "Home";
         break;
       case 1:
         slogan = "Find, Check, Use";
