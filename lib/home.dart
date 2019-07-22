@@ -10,11 +10,20 @@ class _HomeState extends State <Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Puertas Violetas'),
+        bottom: getTabBar(),
 
       ),
-      body: Text('Texto'),
+      body: getTabBarview(),
     );
   }
-
-
+TabBar getTabBar(){
+    return TabBar(
+      tabs: <Tab>[
+        Tab(text: 'Home', icon: Icon(Icons.home)),
+        Tab(text: 'Como actuar', icon: Icon(Icons.announcement)),
+        Tab(text: 'Ajustes', icon: Icon(Icons.settings)),
+      ],
+    );
+}
+TabBar
 }
